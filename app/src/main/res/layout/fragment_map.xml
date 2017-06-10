@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="mdp.ac.id.voadriver.fragments.MapFragment">
+<!--
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="200sp"
+        android:text="hahaah"
+        android:gravity="center_vertical|center_horizontal"/>
+-->
+    <com.google.android.gms.maps.MapView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:id="@+id/map"></com.google.android.gms.maps.MapView>
+</FrameLayout>

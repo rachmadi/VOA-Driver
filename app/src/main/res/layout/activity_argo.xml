@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#212121"
+    android:layout_centerVertical="true"
+    tools:context="id.ac.mdp.voadriver.activities.ArgoActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="#333"
+        android:paddingTop="100dp"
+        android:paddingBottom="100dp">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:text="Durasi Perjalanan"
+            android:id="@+id/tv_argo_title"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#d4d4d4"
+            android:gravity="center_horizontal"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Klik Mulai untuk Memulai"
+            android:layout_below="@id/tv_argo_title"
+            android:id="@+id/tv_argo_time"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:id="@+id/btn_argo_start"
+            android:visibility="visible"
+            android:layout_below="@+id/tv_argo_time"
+            android:text="Mulai"
+            android:textColor="#fff"
+            android:layout_centerHorizontal="true"
+            android:background="#4caf50"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:id="@+id/btn_argo_stop"
+            android:visibility="gone"
+            android:layout_below="@+id/tv_argo_time"
+            android:text="Berhenti"
+            android:textColor="#fff"
+            android:layout_centerHorizontal="true"
+            android:background="#f44336"/>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff">
+    <LinearLayout
+        android:paddingTop="20dp"
+        android:orientation="vertical"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/ivUserProfilePicture"
+        android:src="@drawable/user"
+        android:scaleType="centerCrop"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/tv_user_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12sp"
+        android:textSize="24sp"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:text="Tengku Kevin"
+        android:textAlignment="center"/>
+    <TextView
+        android:id="@+id/tv_user_position"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="#fff"
+        android:text="Driver"
+        android:layout_marginBottom="20dp"
+        android:textAlignment="center"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#f4f4f4"/>
+    <!--<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#fff"
+        android:paddingLeft="22dp"
+        android:paddingRight="22dp"
+        android:paddingTop="18dp"
+        android:paddingBottom="9dp">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            app:srcCompat="@drawable/ic_email_black_24dp"
+            android:scaleType="centerCrop"/>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_email_title"
+                android:layout_marginLeft="12sp"
+                android:textColor="#212121"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:text="Email" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="tengkukevin05@gmail.com"
+                android:textSize="14sp"
+                android:id="@+id/tv_email_content"
+                android:layout_marginLeft="12sp"
+                android:layout_below="@+id/tv_email_title"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="65dp"
+        android:background="#f4f4f4"/>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#fff"
+        android:paddingLeft="22dp"
+        android:paddingRight="22dp"
+        android:paddingTop="9dp"
+        android:paddingBottom="9dp">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            app:srcCompat="@drawable/ic_call_black_24dp"
+            android:scaleType="centerCrop"/>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_contact_title"
+                android:layout_marginLeft="12sp"
+                android:textColor="#212121"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:text="No. Telepon" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="082282510664"
+                android:textSize="14sp"
+                android:id="@+id/tv_contact_content"
+                android:layout_marginLeft="12sp"
+                android:layout_below="@+id/tv_contact_title"/>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>

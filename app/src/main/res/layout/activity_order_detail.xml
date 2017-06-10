@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context="id.ac.mdp.voadriver.activities.OrderDetailActivity">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/navigation_order_detail">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/cardview_edunitas_uploader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10sp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/ivUserProfile"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/profil"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginBottom="8dp" />
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toRightOf="@+id/ivUserProfile"
+                    app:layout_constraintRight_toLeftOf="@+id/head"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintVertical_bias="0.0">
+
+                    <TextView
+                        android:id="@+id/tvOrderUsername"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:text="John Mickley"
+                        android:textSize="16sp"
+                        android:textColor="#212121" />
+
+                    <TextView
+                        android:id="@+id/tvOrderAddress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tvOrderUsername"
+                        android:text="da"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/head"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintRight_toRightOf="parent">
+
+                    <TextView
+                        android:id="@+id/tvOrderTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:layout_centerHorizontal="true"
+                        android:text="16:20"
+                        android:textSize="11sp" /><!--
+                    <ImageView
+                        android:id="@+id/iv_order_status"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/ic_action_progress"
+                        android:layout_below="@id/tvOrderTime"
+                        android:layout_centerHorizontal="true" />-->
+                </RelativeLayout>
+
+            </android.support.constraint.ConstraintLayout>
+
+            <!--<LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_weight="1"
+                android:id="@+id/ll_map_container"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:id="@+id/mapContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp" />
+            </LinearLayout>-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <android.support.v4.widget.NestedScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:clickable="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <!--<FrameLayout
+                            android:clickable="true"
+                            android:background="?attr/selectableItemBackground"
+                            android:id="@+id/mapContainer"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />-->
+
+                        <ImageView
+                            android:id="@+id/img_map_order_detail"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                        <!--<TextView
+                            android:id="@+id/tv_view_map_detail"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="16dp"
+                            android:clickable="true"
+                            android:textStyle="bold"
+                            android:textColor="#fff"
+                            android:foreground="?attr/selectableItemBackground"
+                            android:background="@color/colorPrimary"
+                            android:gravity="center_horizontal"
+                            android:text="Lihat peta perjalanan"/>-->
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#f4f4f4"/>
+                    </LinearLayout>
+                </android.support.v4.widget.NestedScrollView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:text="Tujuan"
+                    android:textColor="#212121"
+                    android:layout_marginBottom="8sp"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_detail_tujuan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:text="Jalan - jalan wawaawaaawaawwaaw"
+                    android:textSize="14dp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#f4f4f4"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="16dp">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_action_time"
+                        android:layout_gravity="center_vertical"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:text="Jam"
+                        android:textColor="#212121"
+                        android:layout_marginBottom="8sp"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/tv_detail_waktu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:text="18:12"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#f4f4f4"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="16dp">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_action_hourglass"
+                        android:layout_gravity="center_vertical"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:text="Durasi"
+                        android:textColor="#212121"
+                        android:layout_marginBottom="8sp"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/tv_detail_durasi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:text="2:00 Jam"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#f4f4f4"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="16dp">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_action_work"
+                        android:layout_gravity="center_vertical"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:text="Kegiatan"
+                        android:textColor="#212121"
+                        android:layout_marginBottom="8sp"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/tv_detail_kegiatan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:text="Rapat"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--<View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#f4f4f4"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="16dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:text="Biaya"
+                    android:textColor="#212121"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="8sp" />
+
+                <TextView
+                    android:id="@+id/tv_detail_biaya"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:text="Rp. 27.000,-"
+                    android:textSize="14sp" />
+            </LinearLayout>
+-->
+
+        </LinearLayout>
+    </ScrollView>
+
+    <com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx
+        android:id="@+id/navigation_order_detail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:layout_anchorGravity="bottom"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:background="#ffffff"
+        app:menu="@menu/order_detail" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">VOA Driver</string>
+    <string name="title_order">Order</string>
+    <string name="title_profile">Profile</string>
+    <string name="title_message">Message</string>
+    <string name="server_key">AIzaSyA8sY4Y071UiLhgcDiMW5eNSypIvn_uD58</string>
+
+    <!-- ACTIVITY_MAIN STRING [__START__]-->
+
+    <string name="activity_main_title_bottom_menu_order">Order</string>
+    <string name="activity_main_title_bottom_menu_chat">Message</string>
+    <string name="activity_main_title_bottom_menu_profile">Profile</string>
+
+    <!-- String untuk ActivityTambahOrder -->
+    <string name="btn_send">Kirim</string>
+
+    <!-- String untuk ActivityEditProfil -->
+    <string name="btn_save">Save</string>
+    <string name="title_activity_order_detail">ActivityOrderDetail</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_map">Map</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="text_vehicle_order_application">VEHICLE ORDER APPLICATION</string>
+    <string name="message_error_pin_size">Pin Number incomplete</string>
+    <string name="message_pin_accepted">PIN Number accepted</string>
+    <string name="system_undercore">_</string>
+    <string name="title_reimburse">Reimburse</string>
+
+    <string name="key_binding_default_toolbar_name">Modal-Toolbar-Title</string>
+
+    <string name="dummy_text">Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.\n\nLorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo."</string>
+
+
+    <string name="BackDropBottomSheetBehavior">id.ac.mdp.voadriver.lib.BackdropBottomSheetBehavior</string>
+    <string name="BottomSheetBehaviorGoogleMapsLike">id.ac.mdp.voadriver.lib.BottomSheetBehaviorGoogleMapsLike</string>
+    <string name="ScrollAwareFABBehavior">id.ac.mdp.voadriver.lib.ScrollAwareFABBehavior</string>
+    <string name="MergedAppBarLayoutBehavior">id.ac.mdp.voadriver.lib.MergedAppBarLayoutBehavior</string>
+    <string name="ScrollingAppBarLayoutBehavior">id.ac.mdp.voadriver.lib.ScrollingAppBarLayoutBehavior</string>
+    <string name="title_activity_maps_detail">Detail Lokasi</string>
+</resources>
